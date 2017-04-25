@@ -1,14 +1,27 @@
 h1 {
   text-align: center;
-  color: red;
-  font-size: 45px;
+  color: yellow;
+  font-size: 100px;
 }
 
 h2 {
-  text-align: center;
+
   color: orange;
   font-size: 30px;
 }
 body{
-background-color: #1E767A;
+  background-image: url(http://www.gsblaw.com/assets/htmlimages/blogs/9/2015/04/I-Stock-Basketball-Court.jpg);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#brand{
+  width: auto;
+  width: 40px;
+}
+
+#teamlogo{
+  background-image: url(https://cdn.dribbble.com/users/112241/screenshots/1950955/flinttropicsdribbble1_1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

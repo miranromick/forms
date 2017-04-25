@@ -1,183 +1,176 @@
-<html>
-<head>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Create a team</h1>
-  <form action='/team' method='post' onsubmit='handleFormSubmit();'>
+<h1>Create a team</h1>
+<form action='/team' method='post' onsubmit='handleFormSubmit();'>
+  <div>
+    <label>Team Name</label>
+    <input type='text' name='team' />
+  </div>
+  <div>
+    <label>City</label>
+    <input type='text' name='city'/>
+  </div>
+  <div>
+    <h2>Win or Loss</h2>
+    <label>
+      <input type='radio' name='wins' value='win' />
+      win
+    </label>
+    <br />
+    <label>
+      <input type='radio' name='wins' value='loss' />
+      loss
+    </label>
+    <br />
+  </div>
+  <h2>
     <div>
-      <label>Team Name</label>
-      <input type='text' name='team' />
+      <label>Player</label>
+      <input type='text' name='player1'/>
     </div>
+  </h2>
+  <label>
+    <input type='checkbox' name='position1' value='Point Guard' />
+    Point Guard
+  </label>
+  <label>
+    <input type='checkbox' name='position1' value='Center' />
+    Center
+  </label>
+
+  <label>
+    <input type='checkbox' name='position1' value='Small Forward' />
+    Small Forward
+  </label>
+
+  <label>
+    <input type='checkbox' name='position1' value='Power Forward' />
+    Power Forward
+  </label>
+
+  <label>
+    <input type='checkbox' name='position1' value='Shooting Guard' />
+    Shooting Guard
+  </label>
+  <h2>
     <div>
-      <label>City</label>
-      <input type='text' name='city'/>
+      <label>Player</label>
+      <input type='text' name='player2'/>
     </div>
+  </h2>
+  <label>
+    <input type='checkbox' name='position2' value='Point Guard' />
+    Point Guard
+  </label>
+  <label>
+    <input type='checkbox' name='position2' value='Center' />
+    Center
+  </label>
+
+  <label>
+    <input type='checkbox' name='position2' value='Small Forward' />
+    Small Forward
+  </label>
+
+  <label>
+    <input type='checkbox' name='position2' value='Power Forward' />
+    Power Forward
+  </label>
+
+  <label>
+    <input type='checkbox' name='position2' value='Shooting Guard' />
+    Shooting Guard
+  </label><h2>
     <div>
-      <h2>Win or Loss</h2>
-      <label>
-        <input type='radio' name='wins' value='win' />
-        win
-      </label>
-      <br />
-      <label>
-        <input type='radio' name='wins' value='loss' />
-        loss
-      </label>
-      <br />
+      <label>Player</label>
+      <input type='text' name='player3'/>
     </div>
-    <h2>
-      <div>
-        <label>Player</label>
-        <input type='text' name='player1'/>
-      </div>
-    </h2>
-    <label>
-      <input type='checkbox' name='position1' value='Point Guard' />
-      Point Guard
-    </label>
-    <label>
-      <input type='checkbox' name='position1' value='Center' />
-      Center
-    </label>
+  </h2>
+  <label>
+    <input type='checkbox' name='position3' value='Point Guard' />
+    Point Guard
+  </label>
+  <label>
+    <input type='checkbox' name='position3' value='Center' />
+    Center
+  </label>
 
-    <label>
-      <input type='checkbox' name='position1' value='Small Forward' />
-      Small Forward
-    </label>
+  <label>
+    <input type='checkbox' name='position3' value='Small Forward' />
+    Small Forward
+  </label>
 
-    <label>
-      <input type='checkbox' name='position1' value='Power Forward' />
-      Power Forward
-    </label>
+  <label>
+    <input type='checkbox' name='position3' value='Power Forward' />
+    Power Forward
+  </label>
 
-    <label>
-      <input type='checkbox' name='position1' value='Shooting Guard' />
-      Shooting Guard
-    </label>
-    <h2>
-      <div>
-        <label>Player</label>
-        <input type='text' name='player2'/>
-      </div>
-    </h2>
-    <label>
-      <input type='checkbox' name='position2' value='Point Guard' />
-      Point Guard
-    </label>
-    <label>
-      <input type='checkbox' name='position2' value='Center' />
-      Center
-    </label>
-
-    <label>
-      <input type='checkbox' name='position2' value='Small Forward' />
-      Small Forward
-    </label>
-
-    <label>
-      <input type='checkbox' name='position2' value='Power Forward' />
-      Power Forward
-    </label>
-
-    <label>
-      <input type='checkbox' name='position2' value='Shooting Guard' />
-      Shooting Guard
-    </label><h2>
-      <div>
-        <label>Player</label>
-        <input type='text' name='player3'/>
-      </div>
-    </h2>
-    <label>
-      <input type='checkbox' name='position3' value='Point Guard' />
-      Point Guard
-    </label>
-    <label>
-      <input type='checkbox' name='position3' value='Center' />
-      Center
-    </label>
-
-    <label>
-      <input type='checkbox' name='position3' value='Small Forward' />
-      Small Forward
-    </label>
-
-    <label>
-      <input type='checkbox' name='position3' value='Power Forward' />
-      Power Forward
-    </label>
-
-    <label>
-      <input type='checkbox' name='position3' value='Shooting Guard' />
-      Shooting Guard
-    </label><h2>
-      <div>
-        <label>Player</label>
-        <input type='text' name='player4'/>
-      </div>
-    </h2>
-    <label>
-      <input type='checkbox' name='position4' value='Point Guard' />
-      Point Guard
-    </label>
-    <label>
-      <input type='checkbox' name='position4' value='Center' />
-      Center
-    </label>
-
-    <label>
-      <input type='checkbox' name='position4' value='Small Forward' />
-      Small Forward
-    </label>
-
-    <label>
-      <input type='checkbox' name='position4' value='Power Forward' />
-      Power Forward
-    </label>
-
-    <label>
-      <input type='checkbox' name='position4' value='Shooting Guard' />
-      Shooting Guard
-    </label><h2>
-      <div>
-        <label>Player</label>
-        <input type='text' name='player5'/>
-      </div>
-    </h2>
-    <label>
-      <input type='checkbox' name='position5' value='Point Guard' />
-      Point Guard
-    </label>
-    <label>
-      <input type='checkbox' name='position5' value='Center' />
-      Center
-    </label>
-
-    <label>
-      <input type='checkbox' name='position5' value='Small Forward' />
-      Small Forward
-    </label>
-
-    <label>
-      <input type='checkbox' name='position5' value='Power Forward' />
-      Power Forward
-    </label>
-
-    <label>
-      <input type='checkbox' name='position5' value='Shooting Guard' />
-      Shooting Guard
-    </label>
-
+  <label>
+    <input type='checkbox' name='position3' value='Shooting Guard' />
+    Shooting Guard
+  </label><h2>
     <div>
-      <input type='submit' value='Submit' />
+      <label>Player</label>
+      <input type='text' name='player4'/>
     </div>
-    <script>
-    function handleFormSubmit(){
-      alert('Form submitted!')
-      teamCreated = true;
-    }
-    </script>
-  </form>
-</body>
-</html>
+  </h2>
+  <label>
+    <input type='checkbox' name='position4' value='Point Guard' />
+    Point Guard
+  </label>
+  <label>
+    <input type='checkbox' name='position4' value='Center' />
+    Center
+  </label>
+
+  <label>
+    <input type='checkbox' name='position4' value='Small Forward' />
+    Small Forward
+  </label>
+
+  <label>
+    <input type='checkbox' name='position4' value='Power Forward' />
+    Power Forward
+  </label>
+
+  <label>
+    <input type='checkbox' name='position4' value='Shooting Guard' />
+    Shooting Guard
+  </label><h2>
+    <div>
+      <label>Player</label>
+      <input type='text' name='player5'/>
+    </div>
+  </h2>
+  <label>
+    <input type='checkbox' name='position5' value='Point Guard' />
+    Point Guard
+  </label>
+  <label>
+    <input type='checkbox' name='position5' value='Center' />
+    Center
+  </label>
+
+  <label>
+    <input type='checkbox' name='position5' value='Small Forward' />
+    Small Forward
+  </label>
+
+  <label>
+    <input type='checkbox' name='position5' value='Power Forward' />
+    Power Forward
+  </label>
+
+  <label>
+    <input type='checkbox' name='position5' value='Shooting Guard' />
+    Shooting Guard
+  </label>
+
+  <div>
+    <input type='submit' value='Submit' />
+  </div>
+  <script>
+  function handleFormSubmit(){
+    alert('Form submitted!')
+    teamCreated = true;
+  }
+  </script>
+</form>

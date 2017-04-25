@@ -1,39 +1,39 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>
-      <%= team %>
-      <br />
-      <img src="/images/flint.png" >
-    </h1>
-    <br />
-    <h2>
-      <%= city %>
-      <br />
-      <img src="/images/sd.jpeg" >
-    </h2>
-    <p>
-      <%= wins %>
-    </p>
-    <p>
-      <%= player1 %>
-      Position: <%= position1 %>
-      <br />
-      <%= player2 %>
-      Position: <%= position2 %>
-      <br />
-      <%= player3 %>
-      Position: <%= position3 %>
-      <br />
-      <%= player4 %>
-      Position: <%= position4 %>
-      <br />
-      <%= player5 %>
-      Position: <%= position5 %>
-    </p>
-    <br />
-    <a href='/'> Try again?</a>
-  </body>
-</html>
+<div id ="teamlogo" class="jumbotron">
+  
+  <h1><%= allTeams.team %></h1>
+</div>
+
+
+
+<!-- <h1>
+  <%= allTeams.team %>
+  <br />
+
+</h1> -->
+<br />
+<h2>
+  <%= allTeams.city %>
+  <br />
+
+</h2>
+<p>
+  <%= allTeams.wins %>
+</p>
+<p>
+  Player: <%= allTeams.player1 %>
+  Position: <%= allTeams.position1 %>
+  <br />
+  Player: <%= allTeams.player2 %>
+  Position: <%= allTeams.position2 %>
+  <br />
+  Player: <%= allTeams.player3 %>
+  Position: <%= allTeams.position3 %>
+  <br />
+  Player: <%= allTeams.player4 %>
+  Position: <%= allTeams.position4 %>
+  <br />
+  Player: <%= allTeams.player5 %>
+  Position: <%= allTeams.position5 %>
+</p>
+<br />
+<a href='/'> Try again?</a>
